@@ -39,6 +39,5 @@ install:
   - export PATH=$HOME:$PATH
   - make dependencies
 script:
-  - pip install tox
-  - tox -- ${DRIVER}
+  - ./run_tests.py -w ${DRIVER}
 dist: xenial
